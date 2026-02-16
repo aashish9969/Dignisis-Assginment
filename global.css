@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    line-height: normal;
+  }
+
+    :root {
+    /* Color */
+    --engirise-background: #fff;
+    --engirise-primary: #F00000;
+    --engirise-secondary: #000000;
+    --engirise-tertiary: #ED890E;
+    --text-color: #747474;
+  }

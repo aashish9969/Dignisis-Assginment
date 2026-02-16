@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engirise Assignment by Aashish T. Sharma</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+   
+    <header class="py-3">
+        
+        <nav class="navbar p-0 rounded d-lg-none" aria-label="Mobile navbar">
+            <div class="container-fluid px-3">
+                <a href="index.html">
+                    <img class="binate-logo" src="/assets/Engirise Logo.png" alt="Binate Logo" style="height: 40px;">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
+                    aria-controls="mobileNav" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas sidebar-background offcanvas-end" tabindex="-1" id="mobileNav"
+                    aria-labelledby="mobileNavLabel">
+                    <div class="offcanvas-header">
+                        <a href="index.html">
+                            <img class="binate-logo" src="/assets/Engirise Logo.png" alt="Binate Logo"
+                                style="height: 40px;">
+                        </a>
+                        <button type="button" class="btn-close me-2 " data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-black" data-bs-toggle="collapse" href="#productsMenu"
+                                    role="button" aria-expanded="false" aria-controls="productsMenu">
+                                    Products <span class="ms-1">&#x25BC;</span>
+                                </a>
+                                <div class="collapse ps-3" id="productsMenu">
+                                    <ul class="list-unstyled">
+                                        <li><a class="nav-link text-black py-1" href="#">Excavators</a></li>
+                                        <li><a class="nav-link text-black py-1" href="#">Loaders </a>
+                                        </li>
+                                        <li><a class="nav-link text-black py-1" href="#">Forklifts
+                                                Us</a></li>
+                                        <li><a class="nav-link text-black py-1" href="#">Road Machinery </a></li>
+                                        <li><a class="nav-link text-black py-1" href="#">MEWPs</a>
+                                        </li>
+                                        <li><a class="nav-link text-black py-1" href="#">Agriculture
+                                                Us</a></li>
+                                        <li><a class="nav-link text-black py-1" href="#">Warehouse Equipment </a></li>
+                                        <li><a class="nav-link text-black py-1" href="#">Concrete Machinery </a>
+                                        </li>
+                                        <li><a class="nav-link text-black py-1" href="#">Cranes
+                                                Us</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link text-black" data-bs-toggle="collapse" href="#mobileServicesMenu"
+                                    role="button" aria-expanded="false" aria-controls="mobileServicesMenu">
+                                    Company Overview <span class="ms-1">&#x25BC;</span>
+                                </a>
+                                <div class="collapse ps-3" id="mobileServicesMenu">
+                                    <ul class="list-unstyled">
+                                        <li><a class="nav-link text-black py-1" href="digital-marketing.html">About</a>
+                                        </li>
+                                        <li><a class="nav-link text-black py-1" href="web-design.html">Career</a>
+                                        </li>
+                                        <li><a class="nav-link text-black py-1" href="web-development.html">Contact
+                                                Us</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" data-bs-toggle="collapse" href="#supportMenu"
+                                    role="button" aria-expanded="false" aria-controls="supportMenu">
+                                    Support <span class="ms-1">&#x25BC;</span>
+                                </a>
+                                <div class="collapse ps-3" id="supportMenu">
+                                    <ul class="list-unstyled">
+                                        <li><a class="nav-link text-black py-1" href="#">Services</a></li>
+                                        <li><a class="nav-link text-black py-1" href="#">Part</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-black" data-bs-toggle="collapse" href="#dealerMenu"
+                                    role="button" aria-expanded="false" aria-controls="dealerMenu">
+                                    Dealer <span class="ms-1">&#x25BC;</span>
+                                </a>
+                                <div class="collapse ps-3" id="dealerMenu">
+                                    <ul class="list-unstyled">
+                                        <li><a class="nav-link text-black py-1" href="#">Find a Dealer</a></li>
+                                        <li><a class="nav-link text-black py-1" href="#">Became a Dealer </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item mt-3">
+                                <a href="#" class="enq-btn btn btn-danger px-4 rounded w-100">
+                                    Enquiry
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar p-0 navbar-expand-lg rounded d-none d-lg-flex" aria-label="Desktop navbar">
+            <div class="col-10 m-auto d-flex align-items-center justify-content-between">
+
+                <div class="navbar-collapse justify-content-between">
+                    <a href="index.html"><img class="binate-logo" src="/assets/Engirise Logo.png" alt="Binate Logo"
+                            height="30"></a>
+                    <ul class="nav navbar-nav justify-content-center gap-4">
+                        <li class="nav-item position-static">
+                            <a class="nav-link px-0 dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                aria-expanded="false">Products</a>
+                            <div class="dropdown-menu border-0 rounded" style="left:unset; left: auto; width: 250px;">
+                                <div class="container">
+                                    <div class="row text-black">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"
+                                                    class="text-black d-block py-2 rounded-top px-3 border border-bottom-1 text-decoration-none">Excavators</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="text-black d-block py-2 px-3 border border-bottom-1 text-decoration-none">Loaders</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="text-black d-block py-2 px-3 border border-bottom-1 text-decoration-none">Forklifts</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="text-black d-block py-2 rounded-bottom border border-bottom-1 px-3 text-decoration-none">Road
+                                                    Machinery </a></li>
+                                            <li><a href="#"
+                                                    class="text-black d-block py-2 rounded-bottom border border-bottom-1 px-3 text-decoration-none">MEWPs
+                                                </a></li>
+                                            <li><a href="#"
+                                                    class="text-black d-block py-2 rounded-bottom border border-bottom-1 px-3 text-decoration-none">Agriculture
+                                                </a></li>
+                                            <li><a href="#"
+                                                    class="text-black d-block py-2 rounded-bottom border border-bottom-1 px-3 text-decoration-none">Warehouse
+                                                    Equipment </a></li>
+                                            <li><a href="#"
+                                                    class="text-black d-block py-2 rounded-bottom border border-bottom-1 px-3 text-decoration-none">Concrete
+                                                    Machinery </a></li>
+                                            <li><a href="#"
+                                                    class="text-black d-block py-2 rounded-bottom border border-bottom-1 px-3 text-decoration-none">Cranes
+                                                </a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item position-static">
+                            <a class="nav-link px-0 dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                aria-expanded="false">Company Overview</a>
+                            <div class="dropdown-menu border-0 rounded" style="left:unset; left: auto; width: 250px;">
+                                <div class="container">
+                                    <div class="row text-black">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"
+                                                    class="text-black d-block py-2 rounded-top px-3 border border-bottom-1 text-decoration-none">About
+                                                </a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="text-black d-block py-2 px-3 border border-bottom-1 text-decoration-none">Career
+                                                </a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="text-black d-block py-2 px-3 border border-bottom-1 text-decoration-none">Contact
+                                                    Us</a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item position-static">
+                            <a class="nav-link px-0 dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                aria-expanded="false">Support</a>
+                            <div class="dropdown-menu border-0 rounded" style="left:unset; left: auto; width: 250px;">
+                                <div class="container">
+                                    <div class="row text-black">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"
+                                                    class="text-black d-block py-2 rounded-top px-3 border border-bottom-1 text-decoration-none">Service</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="text-black d-block py-2 px-3 border border-bottom-1 text-decoration-none">Part</a>
+                                            </li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item position-static">
+                            <a class="nav-link px-0 dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                aria-expanded="false">Dealer</a>
+                            <div class="dropdown-menu border-0 rounded" style="left:unset; left: auto; width: 250px;">
+                                <div class="container">
+                                    <div class="row text-black">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#"
+                                                    class="text-black d-block py-2 rounded-top px-3 border border-bottom-1 text-decoration-none">Find
+                                                    a Dealer</a>
+                                            </li>
+                                            <li><a href="#"
+                                                    class="text-black d-block py-2 px-3 border border-bottom-1 text-decoration-none">Became
+                                                    a Dealer </a>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="#" class="nav-link px-0" data-bs-toggle="dropdown"><i
+                                class="fa-solid fa-globe fs-6 mx-3 text-dark"></i></a>
+                        <div class="dropdown-menu border-0 rounded" style="left:unset; left: auto; width: 250px;">
+                            <div class="container">
+                                <div class="row text-black">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#"
+                                                class="text-black d-block py-2 rounded-top px-3 border border-bottom-1 text-decoration-none">Global</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="text-black d-block py-2 px-3 border border-bottom-1 text-decoration-none">India</a>
+                                        </li>
+                                        <li><a href="#"
+                                                class="text-black d-block py-2 px-3 border border-bottom-1 text-decoration-none">Africa</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-magnifying-glass fs-6 mx-3 text-dark"></i></a>
+                        <a href="#" class="enq-btn btn btn-danger px-4 rounded">
+                            Enquiry
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="hero-section">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6 text-white hero-text">
+                                <h1>Versatile power <br> for every task</h1>
+                                <p>
+                                    A crawler excavator is a heavy-duty machine built on robust tracks,
+                                    designed for demanding construction work.
+                                </p>
+                                <a href="#" class="btn enq-btn px-4 py-2 mt-3">Contact Us</a>
+                            </div>
+
+                            <div class="col-lg-4 text-center">
+                                <img src="assets/Excavator- EN220 3.png" class="img-fluid hero-img" alt="Excavator">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6 text-white hero-text">
+                                <h1>Heavy Load <br> Perfect Control</h1>
+                                <p>
+                                    Built for strength and durability in extreme environments.
+                                </p>
+                                <a href="#" class="btn enq-btn px-4 py-2 mt-3">Contact Us</a>
+                            </div>
+
+                            <div class="col-lg-4 text-center">
+                                <img src="assets/Wheel Loader- WL50 1.png" class="img-fluid hero-img" alt="Loader">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="category-indicator">
+            <ul>
+                <li class="active">Excavator</li>
+                <li>Loader</li>
+                <li>Forklifter</li>
+                <li>Road Machinery</li>
+                <li>MEWPs</li>
+                <li>Agriculture</li>
+                <li>Warehouse Equipment</li>
+                <li>Concrete Machinery</li>
+                <li>Cranes</li>
+            </ul>
+        </div>
+
+    </section>
+
+
+    <section class="about-section">
+        <div class="container">
+            <span class="section-badge">About Us</span>
+            <div class="row align-items-start">
+                <div class="col-lg-6">
+
+                    <h2 class="section-title mt-3">
+                        Lorem ipsum dolor sit amet, <br>
+                        consectetur
+                    </h2>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <h3 class="about-stat">2.5M +</h3>
+                            <p class="about-stat-text">A crawler excavator</p>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="about-stat">25M +</h3>
+                            <p class="about-stat-text">A crawler excavator</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <p class="section-description fs-6">
+                        A crawler excavator is a heavy-duty machine built on robust tracks,
+                        designed for powerful digging, lifting, and earthmoving across rough
+                        or uneven terrain. Its stability and traction make it ideal for
+                        construction, mining, and infrastructure projects.
+                    </p>
+
+                    <p class="section-description fs-6">
+                        A crawler excavator is a heavy-duty machine built on robust tracks,
+                        designed for powerful digging, lifting, and earthmoving across rough
+                        or uneven terrain.
+                    </p>
+
+                    <a href="#" class="enq-btn btn mt-3">About Us</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="product-section">
+        <div class="container position-relative">
+
+            <div id="productCarousel" class="carousel carousel-fade" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6">
+                                <span class="section-badge">Product</span>
+                                <h2 class="section-title mt-3">Excavator</h2>
+                                <p class="section-description mt-3">
+                                    A crawler excavator is a heavy-duty machine built on robust tracks, designed for
+                                    powerful digging, lifting, and earthmoving across rough or uneven terrain. Its
+                                    stability and traction make it ideal for construction, mining, and infrastructure
+                                    projects, and it is available in two types: electric crawler excavator and diesel
+                                    crawler excavator.
+                                </p>
+                                <a href="#" class="btn enq-btn mt-3">Explore Excavator</a>
+
+                                <div class="slide-count mt-5">
+                                    01 / 03
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 text-end">
+                                <img src="assets/Frame 2147225134.png" class="img-fluid product-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6">
+                                <span class="section-badge">Product</span>
+                                <h2 class="section-title mt-3">Loader</h2>
+                                <p class="section-description mt-3">
+                                    A crawler excavator is a heavy-duty machine built on robust tracks, designed for
+                                    powerful digging, lifting, and earthmoving across rough or uneven terrain. Its
+                                    stability and traction make it ideal for construction, mining, and infrastructure
+                                    projects, and it is available in two types: electric crawler excavator and diesel
+                                    crawler excavator.
+                                </p>
+                                <a href="#" class="btn enq-btn mt-3">Explore Excavator</a>
+
+                                <div class="slide-count mt-5">
+                                    02 / 03
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 text-end">
+                                <img src="assets/Frame 2147225136.png" class="img-fluid product-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+
+                            <div class="col-lg-6">
+                                <span class="section-badge">Product</span>
+                                <h2 class="section-title mt-3">Forklift</h2>
+                                <p class="section-description mt-3">
+                                    A crawler excavator is a heavy-duty machine built on robust tracks, designed for
+                                    powerful digging, lifting, and earthmoving across rough or uneven terrain. Its
+                                    stability and traction make it ideal for construction, mining, and infrastructure
+                                    projects, and it is available in two types: electric crawler excavator and diesel
+                                    crawler excavator.
+                                </p>
+                                <a href="#" class="btn enq-btn mt-3">Explore Excavator</a>
+
+                                <div class="slide-count mt-5">
+                                    03 / 03
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 text-end">
+                                <img src="assets/Frame 2147225146.png" class="img-fluid product-img">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="carousel-control-prev custom-arrow" type="button" data-bs-target="#productCarousel"
+                    data-bs-slide="prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+
+                <button class="carousel-control-next custom-arrow" type="button" data-bs-target="#productCarousel"
+                    data-bs-slide="next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="contact-section py-5">
+        <div class="container text-center">
+            <span class="section-badge">Contact Us</span>
+            <h2 class="section-title mt-3">Get In Touch</h2>
+            <div class="contact-wrapper mt-5">
+
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-card">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-user-group"></i>
+                            </div>
+                            <h5>Find a Dealer</h5>
+                            <p>
+                                Kickstart your project by contacting
+                                an authorized Engirise dealer.
+                            </p>
+                            <a href="#" class="btn enq-btn">Learn More</a>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-card">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <h5>Contact Us</h5>
+                            <p>
+                                Reach out to our team of experts for
+                                information and assistance.
+                            </p>
+                            <a href="#" class="btn enq-btn">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="contact-card">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <h5>Explore Engirise Africa</h5>
+                            <p>
+                                Discover our innovative solutions for
+                                the world’s fastest growing.
+                            </p>
+                            <a href="#" class="btn enq-btn">Learn More</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+<section class="brand-banner">
+  <div class="container">
+
+    <div class="row align-items-center">
+
+      <div class="col-lg-5">
+        <h2 class="brand-title">
+          Engirise Your Global <br>
+          Equipment Partner
+        </h2>
+      </div>
+
+      <div class="col-lg-7 text-end">
+        <img src="assets/Wheel Loader- WL50 1.png" class="img-fluid brand-img" alt="Loader">
+
+        <div class="vertical-text">
+          ENGIRISE
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+    <footer class="footer pt-5 pb-3" style="background-color: #252525;">
+        <div class="container">
+            <div class="row text-white justify-content-center align-items-start">
+                <div class="col-lg-3 col-md-12 text-lg-start text-md-center mb-4">
+                    <h5 class="mb-3">
+                        <img src="/assets/Engirise Logo.png" alt="Binate Logo" style="height: 40px;">
+                    </h5>
+                    <p class="m-0 fs-6">
+                        Engirise India manufactures next-gen, eco-conscious heavy machinery adapted to Indian industrial
+                        projects.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 mb-4 ps-lg-5 ps-sm-0">
+                    <h5 class="mb-3 fw-semibold fs-6 mb-4">Machinery</h5>
+                    <ul class="list-unstyled p-0 d-flex flex-column gap-2">
+                        <li><a href="#" class="text-white text-decoration-none">Products</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Part</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <h5 class="mb-3 fw-semibold fs-6 mb-4">Company</h5>
+                    <ul class="list-unstyled p-0 d-flex flex-column gap-2">
+                        <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Career</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mb-4">
+                    <h5 class="mb-3 fw-semibold fs-6 mb-4">Help</h5>
+                    <ul class="list-unstyled p-0 d-flex flex-column gap-2">
+                        <li><a href="#" class="text-white text-decoration-none">Privacy policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12 mb-4">
+                    <h5 class="mb-3 fw-semibold fs-6 mb-4">
+                        India Address
+                    </h5>
+                    <p class="m-0 small">
+                        2068, U-Wing, Akshar Business Park,
+                        Sector-25, Vashi, Navi Mumbai-400705 
+                    </p>
+
+                    <div class="social-icons mb-lg-0 mb-md-3 mb-sm-3 mt-lg-5 mt-md-4 mt-4">
+                        <a href="#"
+                            class="d-inline-block text-center text-white text-decoration-none mx-2 rounded-circle facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="d-inline-block text-center text-white text-decoration-none mx-2 rounded-circle twitter"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#"
+                            class="d-inline-block text-center text-white text-decoration-none mx-2 rounded-circle linkedin"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="#"
+                            class="d-inline-block text-center text-white text-decoration-none mx-2 rounded-circle instagram"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top border-warning mt-1 pt-3 text-center text-light">
+                Copyright © 2025 Engirise Private Ltd.</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
